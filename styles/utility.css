@@ -131,6 +131,9 @@ ul {
 .m-6 {
   margin: 6.4rem;
 }
+.ml-auto{
+  margin-left: auto;
+}
 
 /* border-radius */
 .br-sm {
@@ -261,6 +264,9 @@ ul {
 }
 .justify-center {
   justify-content: center;
+}
+.justify-sb{
+  justify-content: space-between;
 }
 .align-center {
   align-items: center;
