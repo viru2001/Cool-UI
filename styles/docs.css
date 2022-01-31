@@ -1,0 +1,22 @@
+@import "./main.css";
+@import "./navbar.css";
+@import "./footer.css";
+
+/* component navigation menu */
+.component-nav {
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+.component-nav-list {
+  overflow-y: auto;
+}
+
+.comp-nav-link-item {
+  color: var(--black-color);
+}
+
+.comp-nav-link-item:hover {
+  color: var(--primary-color);
+}
+

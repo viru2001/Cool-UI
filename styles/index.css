@@ -1,0 +1,37 @@
+@import "./main.css";
+@import "./navbar.css";
+@import "./footer.css";
+
+
+.promo-text-heading {
+  color: var(--primary-color);
+}
+.no-style-link{
+  text-decoration: none;
+  color: inherit;
+}
+.btn {
+  outline: none;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.btn-secondary{
+  background-color: transparent;
+  color:var(--primary-color);
+  border: solid 1px var(--primary-color);
+}
+
+/* to make footer stick to bottom */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+  margin-top: auto;
+}
+

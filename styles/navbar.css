@@ -1,0 +1,16 @@
+.brand-name {
+  color: var(--primary-color);
+}
+.nav-link-item,
+.brand-name {
+  text-decoration: none;
+}
+.primary-nav-link-item {
+  color: var(--black-color);
+}
+.primary-nav-link-item:hover {
+  color: var(--primary-color);
+}
+.primary-nav-active {
+  color: var(--primary-color);
+}
