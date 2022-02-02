@@ -19,7 +19,7 @@
 }
 /* outlined buttons */
 .btn-outline {
-  background: transparent;
+  background-color: var(--white-color);
 }
 .btn-primary-outline {
   color: var(--primary-color);
