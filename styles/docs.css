@@ -1,8 +1,5 @@
-@import "./main.css";
 @import "./navbar.css";
 @import "./footer.css";
-@import "../components/Alert/alert.css";
-@import "../components/Button/button.css";
 
 /* component navigation menu */
 .component-nav {

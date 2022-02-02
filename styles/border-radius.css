@@ -1,0 +1,12 @@
+.border-radius-sm {
+  border-radius: 0.5rem;
+}
+.border-radius-md {
+  border-radius: 1rem;
+}
+.border-radius-lg {
+  border-radius: 1.5rem;
+}
+.border-radius-round {
+  border-radius: 99.9rem;
+}

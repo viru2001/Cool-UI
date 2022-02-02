@@ -1,7 +1,5 @@
-@import "./main.css";
 @import "./navbar.css";
 @import "./footer.css";
-
 
 .promo-text-heading {
   color: var(--primary-color);
