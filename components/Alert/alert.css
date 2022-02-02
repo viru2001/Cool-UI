@@ -15,6 +15,9 @@
   background-color: var(--warning-color);
 }
 /* outlined alerts */
+.alert-outlined{
+  background-color: var(--white-color);
+}
 .alert-primary-outlined {
   color: var(--primary-color);
   border: solid 1px var(--primary-color);
