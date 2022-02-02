@@ -1,12 +1,12 @@
-.border-radius-sm {
+.rounded-sm {
   border-radius: 0.5rem;
 }
-.border-radius-md {
+.rounded-md {
   border-radius: 1rem;
 }
-.border-radius-lg {
+.rounded-lg {
   border-radius: 1.5rem;
 }
-.border-radius-round {
+.rounded-full {
   border-radius: 99.9rem;
 }
