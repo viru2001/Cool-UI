@@ -30,4 +30,5 @@
 }
 .component-wrapper {
   border: solid 1px var(--black-color);
+  background-color: var(--light-gray-color);
 }
