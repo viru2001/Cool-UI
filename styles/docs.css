@@ -1,22 +1,36 @@
 @import "./main.css";
 @import "./navbar.css";
 @import "./footer.css";
+@import "../components/Alert/alert.css";
+@import "../components/Button/button.css";
 
 /* component navigation menu */
 .component-nav {
-  left: 0;
   top: 0;
   height: 100vh;
 }
 .component-nav-list {
   overflow-y: auto;
 }
-
 .comp-nav-link-item {
   color: var(--black-color);
 }
-
 .comp-nav-link-item:hover {
   color: var(--primary-color);
 }
 
+/* code snippet */
+.code-snippet {
+  width: 100%;
+  border: 0;
+  transform: scale(1);
+  overflow: scroll;
+}
+
+/* component container styles */
+.component-container {
+  margin-left: 10rem;
+}
+.component-wrapper {
+  border: solid 1px var(--black-color);
+}
