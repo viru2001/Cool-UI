@@ -1,0 +1,66 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  color: var(--white-color);
+}
+/* normal buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-danger {
+  background-color: var(--danger-color);
+}
+.btn-success {
+  background-color: var(--success-color);
+}
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+/* outlined buttons */
+.btn-outline {
+  background: transparent;
+}
+.btn-primary-outline {
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+}
+.btn-primary-outline:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+.btn-danger-outline {
+  color: var(--danger-color);
+  border: solid 1px var(--danger-color);
+}
+.btn-danger-outline:hover {
+  color: var(--white-color);
+  background-color: var(--danger-color);
+}
+.btn-success-outline {
+  color: var(--success-color);
+  border: solid 1px var(--success-color);
+}
+.btn-success-outline:hover {
+  color: var(--white-color);
+  background-color: var(--success-color);
+}
+/* link button */
+.btn-link {
+  background-color: var(--primary-color);
+}
+.btn-link > a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* icon button  */
+.btn-icon {
+  color: var(--primary-color);
+  background: transparent;
+}
+/* floating icon */
+.btn-floating {
+  width: 5rem;
+  height: 5rem;
+}
