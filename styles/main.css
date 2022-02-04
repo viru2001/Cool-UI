@@ -22,6 +22,8 @@
 
 @import "../components/Alert/alert.css";
 @import "../components/Button/button.css";
+@import "../components/Image/image.css";
+@import "../components/Input/input.css";
 
 html {
   font-size: 62.5%;

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+
+    <link rel="stylesheet" href="../../styles/main.css" />
+  </head>
+  <body>
+    <div class="d-flex flex-col">
+      <label class="input-label-required text-sm" for="email">Email</label>
+      <input
+        type="text"
+        class="text-input w-100 p-2 text-sm"
+        placeholder="abc@gmail.com"
+        required
+      />
+    </div>
+
+    <div class="d-flex flex-col">
+      <label class="text-sm" for="name">Name</label>
+      <input
+        type="text"
+        class="text-input w-100 p-2 text-sm"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+
+    <div class="d-flex flex-col">
+      <label class="input-label-required text-sm" for="password">Password</label>
+      <input
+        type="text"
+        class="text-input w-100 p-2 text-sm"
+        placeholder="Enter your password"
+        required
+      />
+    </div>
+
+    <div class="input-grp-err d-flex flex-col">
+      <label class="input-label-required text-sm" for="confirm-password"
+        >Confirm Password</label
+      >
+      <input
+        type="text"
+        class="text-input w-100 p-2 text-sm"
+        placeholder="Re-enter password"
+        required
+      />
+      <span class="text-sm">Passwords not matched. Try Again</span>
+    </div>
+
+    <div class="d-flex flex-col">
+      <label class="text-sm" for="country">Country</label>
+      <input
+        type="text"
+        class="text-input text-sm w-100 p-2"
+        name="country"
+        value="India"
+        readonly
+      />
+    </div>
+
+    <div class="d-flex flex-col">
+      <label class="text-sm" for="address">Enter Your Address</label>
+      <textarea
+        type="text"
+        class="text-area w-100 p-2 text-sm"
+        placeholder="Enter address here"
+        rows="3"
+      ></textarea>
+    </div>
+  </body>
+</html>
