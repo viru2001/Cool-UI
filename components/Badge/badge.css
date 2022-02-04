@@ -1,0 +1,64 @@
+/* badge on avatar */
+.badge-status {
+  width: 2rem;
+  height: 2rem;
+  border: solid 1px var(--white-color);
+}
+.badge-lg-status {
+  right: 0;
+  bottom: 1.2rem;
+  right: 1.6rem;
+}
+.status-online {
+  background-color: var(--success-color);
+}
+.badge-md-status {
+  right: 0;
+  bottom: 1rem;
+  right: 3px;
+}
+.status-offline {
+  background-color: var(--gray-color);
+}
+.badge-sm-status {
+  right: 0;
+  bottom: 1rem;
+  right: -3px;
+}
+.status-dnd {
+  background-color: var(--danger-color);
+}
+.badge-xs-status {
+  right: 0;
+  bottom: 0;
+  right: -3px;
+}
+.status-idle {
+  background-color: var(--warning-color);
+}
+
+/* badge on text */
+.badge {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0 7px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.heading-badge {
+  bottom: 2rem;
+}
+.text-badge{
+    bottom: 1rem;
+}
+
+.btn-badge{
+    top:-1rem;
+}
+.icon-badge-wrapper{
+    width: fit-content;
+}
+.icon-badge{
+    top:-1rem;
+    right:-1.8rem;
+}
