@@ -1,4 +1,4 @@
-.input-label-req:after{
+.input-label-required:after{
     content: "*";
     color: var(--danger-color);
 }
