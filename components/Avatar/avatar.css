@@ -1,30 +1,21 @@
 .avatar-lg{
     width: 15rem;
+    height: 15rem;
 }
 .avatar-md{
     width: 10rem;
+    height: 10rem;
 }
 .avatar-sm{
     width: 8rem;
+    height: 8rem;
 }
 .avatar-xs{
     width: 5rem;
+    height: 5rem;
 }
 
 .avatar-text{
     background-color: var(--primary-color);
     color: var(--white-color);
-}
-
-.avatar-lg-text{
-    height: 15rem;
-}
-.avatar-md-text{
-    height: 10rem;
-}
-.avatar-sm-text{
-    height: 8rem;
-}
-.avatar-xs-text{
-    height: 5rem;
 }
