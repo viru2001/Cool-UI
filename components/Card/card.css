@@ -1,0 +1,42 @@
+:root {
+  --text-overlay-bg: #00000040;
+}
+.card-wrapper {
+  border: 1px solid var(--gray-color);
+  background: var(--white-color);
+}
+.vertical-card-wrapper {
+  width: 35rem;
+}
+.product-discount {
+  color: var(--success-color);
+}
+.product-original-price {
+  text-decoration: line-through;
+  color: var(--gray-color);
+}
+.horizontal-card-wrapper {
+  width: 55rem;
+}
+.horizontal-card-img {
+  width: 22rem;
+}
+.horizontal-card-btns-wrapper {
+  gap: 1rem;
+}
+.vertical-card-badge {
+  background-color: var(--success-color);
+  color: var(--black-color);
+  top: 5px;
+}
+.close-icon-wrapper {
+  text-align: right;
+}
+.text-overlay-container {
+  top: 0;
+  background-color: var(--text-overlay-bg);
+}
+.text-overlay {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}

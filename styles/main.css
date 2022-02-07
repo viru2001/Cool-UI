@@ -24,6 +24,7 @@
 @import "../components/Button/button.css";
 @import "../components/Image/image.css";
 @import "../components/Input/input.css";
+@import "../components/Card/card.css";
 
 html {
   font-size: 62.5%;
@@ -43,5 +44,3 @@ ol,
 ul {
   list-style: none;
 }
-
-
