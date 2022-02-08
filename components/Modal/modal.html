@@ -37,7 +37,49 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-primary rounded-sm text-sm p-3" id="simple-modal-demo-btn">Live Demo</button>
-<script src="./modal.js"></script>  
-</body>
+    <!-- list modal -->
+    <div
+      class="modal-wrapper w-100 h-100 justify-center align-center d-none p-fixed"
+      id="list-modal-wrapper"
+    >
+      <div class="modal-container rounded-md">
+        <div class="p-8">
+          <h2 class="headline-md">Modal header</h2>
+          <div class="action-btns-wrapper" id="list-modal-buttons">
+            <button
+              class="btn btn-outline btn-primary-outline btn-action rounded-sm text-sm w-100 d-flex justify-start align-center p-2"
+            >
+              <i class="fas fa-user mr-2"></i>
+              Item 1
+            </button>
+            <button
+              class="btn btn-outline btn-primary-outline btn-action rounded-sm text-sm p-3 mt-4 w-100 d-flex justify-start align-center p-2"
+            >
+              <i class="fas fa-user mr-2"></i>
+              Item 2
+            </button>
+            <button
+              class="btn btn-outline btn-primary-outline btn-action rounded-sm text-sm p-3 mt-4 w-100 d-flex justify-start align-center p-2"
+            >
+              <i class="fas fa-user mr-2"></i>
+              Item 3
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="btn btn-primary rounded-sm text-sm p-3"
+      id="simple-modal-demo-btn"
+    >
+      Live Demo
+    </button>
+    <button
+      class="btn btn-primary rounded-sm text-sm p-3"
+      id="list-modal-demo-btn"
+    >
+      Live Demo
+    </button>
+    <script src="./modal.js"></script>
+  </body>
 </html>
