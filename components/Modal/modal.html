@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="../../styles/main.css" />
+  </head>
+  <body>
+    <!-- Simple modal -->
+    <div
+      class="modal-wrapper w-100 h-100 justify-center align-center d-none p-fixed"
+      id="simple-modal-wrapper"
+    >
+      <div class="modal-container rounded-md">
+        <div class="p-8">
+          <h2 class="headline-md">Modal header</h2>
+          <p class="text-sm mt-3">
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
+          </p>
+          <div
+            class="action-btns-wrapper mt-4 d-flex justify-end"
+            id="simple-modal-buttons"
+          >
+            <button class="btn btn-primary btn-action rounded-sm text-sm p-3">
+              Save Changes
+            </button>
+            <button
+              class="btn btn-outline btn-action btn-primary-outline rounded-sm text-sm p-3 ml-4"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary rounded-sm text-sm p-3" id="simple-modal-demo-btn">Live Demo</button>
+<script src="./modal.js"></script>  
+</body>
+</html>
