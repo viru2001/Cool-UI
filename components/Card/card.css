@@ -40,3 +40,7 @@
   background-color: var(--gray-color);
   color: var(--white-color);
 }
+
+.reset-dismissed-card{
+  display: none;
+}

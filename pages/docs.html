@@ -564,7 +564,10 @@
           <!-- card with dismiss button-->
           <p class="headline-md font-wt-bold mt-5 ml-6">Card with Dismiss</p>
           <div class="component-wrapper m-8 p-8 container-center">
-            <div class="card-wrapper vertical-card-wrapper">
+             <button class="btn rounded-sm text-sm p-3 btn-primary reset-dismissed-card">
+              Reset
+            </button>
+            <div class="card-wrapper vertical-card-wrapper dismiss-card-wrapper">
               <div class="close-icon-wrapper">
                 <i class="fas fa-times-circle p-2 fa-3x"></i>
               </div>
@@ -964,5 +967,6 @@
         </li>
       </ul>
     </footer>
+    <script src="../components/Card/card.js"></script>
   </body>
 </html>
