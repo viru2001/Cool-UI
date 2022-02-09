@@ -67,3 +67,18 @@
 .font-wt-black {
   font-weight: 900;
 }
+/* text alignment */
+
+.text-center {
+  text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+/* gray text */
+.text-gray{
+    color: var(--gray-color);
+}
