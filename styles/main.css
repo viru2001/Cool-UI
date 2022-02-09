@@ -26,6 +26,8 @@
 @import "../components/Input/input.css";
 @import "../components/Avatar/avatar.css";
 @import "../components/Badge/badge.css";
+@import "../components/Modal/modal.css";
+
 
 html {
   font-size: 62.5%;
