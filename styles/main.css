@@ -30,7 +30,7 @@
 @import "../components/Text-Utils/text-utils.css";
 @import "../components/List/list.css";
 @import "../components/Navigation/navigation.css";
-
+@import "../components/Card/card.css";
 
 html {
   font-size: 62.5%;
@@ -50,5 +50,3 @@ ol,
 ul {
   list-style: none;
 }
-
-
