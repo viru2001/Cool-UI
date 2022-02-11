@@ -23,9 +23,10 @@
 .btn-success:hover {
   background-color: var(--success-hover-bg);
 }
-.btn-disabled {
-  pointer-events: none;
-  opacity: 0.5;
+
+.btn[disabled]{
+    opacity: 0.5;
+    cursor:not-allowed;
 }
 
 /* outlined buttons */
