@@ -456,7 +456,10 @@
           <!-- Button Badges -->
           <p class="headline-md font-wt-bold mt-5 ml-6">Button Badges</p>
           <div class="component-wrapper m-8 p-8 d-flex justify-around">
-            <button class="btn btn-success p-3 rounded-sm p-relative">
+            <button
+              type="button"
+              class="btn btn-success p-3 rounded-sm p-relative"
+            >
               <span class="text-sm">Action</span>
               <span
                 class="badge btn-badge-position text-sm font-wt-bold rounded-full p-absolute"
@@ -464,7 +467,10 @@
               >
             </button>
 
-            <button class="btn btn-success p-5 rounded-sm p-relative">
+            <button
+              type="button"
+              class="btn btn-success p-5 rounded-sm p-relative"
+            >
               <span class="text-md">Action</span>
               <span
                 class="badge btn-badge-position text-sm font-wt-bold rounded-full p-absolute"
@@ -515,18 +521,24 @@
           <p class="headline-md font-wt-bold mt-5 ml-6">Normal Button</p>
 
           <div class="component-wrapper m-8 p-8 d-flex justify-around">
-            <button class="btn rounded-sm text-sm p-3 btn-primary">
+            <button
+              type="button"
+              class="btn rounded-sm text-sm p-3 btn-primary"
+            >
               Primary
             </button>
-            <button class="btn rounded-sm text-sm p-3 btn-danger">
+            <button type="button" class="btn rounded-sm text-sm p-3 btn-danger">
               Danger
             </button>
-            <button class="btn rounded-sm text-sm p-3 btn-success">
+            <button
+              type="button"
+              class="btn rounded-sm text-sm p-3 btn-success"
+            >
               Success
             </button>
             <button
-              class="btn btn-primary btn-disabled rounded-sm text-sm p-3"
-              disabled="disabled"
+              class="btn btn-primary rounded-sm text-sm p-3"
+              disabled
             >
               Disabled
             </button>
@@ -541,18 +553,24 @@
           <p class="headline-md font-wt-bold mt-5 ml-6">Large Button</p>
 
           <div class="component-wrapper m-8 p-8 d-flex justify-around">
-            <button class="btn btn-primary rounded-sm text-md p-5">
+            <button
+              type="button"
+              class="btn btn-primary rounded-sm text-md p-5"
+            >
               Primary
             </button>
-            <button class="btn btn-danger rounded-sm text-md p-5">
+            <button type="button" class="btn btn-danger rounded-sm text-md p-5">
               Danger
             </button>
-            <button class="btn btn-success rounded-sm text-md p-5">
+            <button
+              type="button"
+              class="btn btn-success rounded-sm text-md p-5"
+            >
               Success
             </button>
             <button
-              class="btn btn-primary btn-disabled rounded-sm text-md p-5"
-              disabled="disabled"
+              class="btn btn-primary rounded-sm text-md p-5"
+              disabled
             >
               Disabled
             </button>
@@ -595,7 +613,7 @@
           <p class="headline-md font-wt-bold mt-5 ml-6">Link Button</p>
 
           <div class="component-wrapper m-8 p-8 d-flex justify-center">
-            <button class="btn btn-link p-3 text-sm rounded-sm">
+            <button type="button" class="btn btn-link p-3 text-sm rounded-sm">
               <a href="#">Link Button</a>
             </button>
           </div>
@@ -610,13 +628,13 @@
           <p class="headline-md font-wt-bold mt-5 ml-6">Icon Button</p>
 
           <div class="component-wrapper m-8 p-8 d-flex justify-around">
-            <button class="btn btn-icon">
+            <button type="button" class="btn btn-icon">
               <i class="fas fa-heart text-md"></i>
             </button>
-            <button class="btn btn-icon">
+            <button type="button" class="btn btn-icon">
               <i class="fas fa-shopping-cart text-md"></i>
             </button>
-            <button class="btn btn-icon">
+            <button type="button" class="btn btn-icon">
               <i class="fas fa-trash text-md"></i>
             </button>
           </div>
@@ -633,10 +651,13 @@
           </p>
 
           <div class="component-wrapper m-8 p-8 d-flex justify-around">
-            <button class="btn btn-primary p-4 rounded-sm">
+            <button type="button" class="btn btn-primary p-4 rounded-sm">
               <i class="fas fa-bolt mr-2"></i> Buy now
             </button>
-            <button class="btn btn-outline btn-primary-outline p-4 rounded-sm">
+            <button
+              type="button"
+              class="btn btn-outline btn-primary-outline p-4 rounded-sm"
+            >
               <i class="fas fa-shopping-cart mr-2"></i> Add To Cart
             </button>
           </div>
@@ -859,10 +880,15 @@
           <!-- card with dismiss button-->
           <p class="headline-md font-wt-bold mt-5 ml-6">Card with Dismiss</p>
           <div class="component-wrapper m-8 p-8 container-center">
-             <button class="btn rounded-sm text-sm p-3 btn-primary reset-dismissed-card">
+            <button
+              type="button"
+              class="btn rounded-sm text-sm p-3 btn-primary reset-dismissed-card"
+            >
               Reset
             </button>
-            <div class="card-wrapper vertical-card-wrapper dismiss-card-wrapper">
+            <div
+              class="card-wrapper vertical-card-wrapper dismiss-card-wrapper"
+            >
               <div class="close-icon-wrapper">
                 <i class="fas fa-times-circle p-2 fa-3x"></i>
               </div>
@@ -1548,7 +1574,6 @@
           ></iframe>
         </section>
 
-        
         <!-- Navigation -->
         <section class="component-container mt-6" id="navigation">
           <h3 class="headline-lg ml-6">Navigation</h3>
@@ -1580,7 +1605,9 @@
             Navigation with Search-bar
           </p>
           <div class="component-wrapper m-8 p-8">
-            <header class="navbar-wrapper d-flex align-center justify-around box-shadow-lg">
+            <header
+              class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+            >
               <h1 class="brand headline-lg p-4">Brand</h1>
               <div
                 class="search-box d-flex align-center justify-between my-4 w-50"
@@ -1616,7 +1643,9 @@
             Navigation with search-bar and buttons
           </p>
           <div class="component-wrapper m-8 p-8">
-            <header class="navbar-wrapper d-flex align-center justify-around box-shadow-lg">
+            <header
+              class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+            >
               <h1 class="brand headline-lg p-4">Brand</h1>
               <div
                 class="search-box d-flex align-center justify-between my-4 w-50"
@@ -1631,7 +1660,10 @@
                   <i class="fas fa-search text-md"></i>
                 </button>
               </div>
-              <button class="btn btn-primary rounded-sm text-sm p-4">
+              <button
+                type="button"
+                class="btn btn-primary rounded-sm text-sm p-4"
+              >
                 Login
               </button>
               <button
@@ -1652,7 +1684,9 @@
             Navigation with search-bar and icon buttons
           </p>
           <div class="component-wrapper m-8 p-8">
-            <header class="navbar-wrapper d-flex align-center justify-around box-shadow-lg">
+            <header
+              class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+            >
               <h1 class="brand headline-lg p-4">Brand</h1>
               <div
                 class="search-box d-flex align-center justify-between my-4 w-50"
@@ -1669,7 +1703,10 @@
               </div>
               <ul class="nav-links d-flex align-center">
                 <li>
-                  <button class="btn btn-primary rounded-sm text-sm p-4">
+                  <button
+                    type="button"
+                    class="btn btn-primary rounded-sm text-sm p-4"
+                  >
                     Login
                   </button>
                 </li>

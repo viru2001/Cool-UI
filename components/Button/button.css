@@ -1,3 +1,4 @@
+
 .btn {
   border: none;
   cursor: pointer;
@@ -7,16 +8,27 @@
 .btn-primary {
   background-color: var(--primary-color);
 }
+.btn-primary:hover {
+  background-color: var(--primary-hover-bg);
+}
 .btn-danger {
   background-color: var(--danger-color);
+}
+.btn-danger:hover {
+  background-color: var(--danger-hover-bg);
 }
 .btn-success {
   background-color: var(--success-color);
 }
-.btn-disabled {
-  pointer-events: none;
-  opacity: 0.5;
+.btn-success:hover {
+  background-color: var(--success-hover-bg);
 }
+
+.btn[disabled]{
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+
 /* outlined buttons */
 .btn-outline {
   background-color: var(--white-color);
@@ -64,3 +76,5 @@
   width: 5rem;
   height: 5rem;
 }
+
+

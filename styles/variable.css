@@ -1,12 +1,16 @@
 :root {
   --black-color: #333;
   --white-color: #fff;
-  --primary-color: #0054a3;
-  --secondary-color: #ff9204;
-  --light-blue-color:#8dc3f5;
   --gray-color:#808080;
   --light-gray-color:#f7f7f7;
+
+  --primary-color:#6366f1;
+  --primary-hover-bg: #4F46E5;
+  --secondary-color: #d0d1d2;
+  --light-blue-color:#8dc3f5;
   --danger-color: #f44336;
+  --danger-hover-bg: #d31609;
   --success-color: #4caf50;
+  --success-hover-bg: #0d8611;
   --warning-color: #ff9204;
 }
