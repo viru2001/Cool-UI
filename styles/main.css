@@ -18,6 +18,7 @@
 @import "../components/List/list.css";
 @import "../components/Navigation/navigation.css";
 @import "../components/Card/card.css";
+@import "../components/Grid/grid.css";
 
 html {
   font-size: 62.5%;

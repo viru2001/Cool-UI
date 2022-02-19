@@ -1,0 +1,29 @@
+.grid-item{
+    border:solid 1px var(--primary-color);
+    height: 10rem;
+}
+
+.gap-1{
+    gap: 1rem;
+}
+
+.grid-20-80{
+    grid-template-columns: 20% 1fr;
+}
+.grid-30-70{
+    grid-template-columns: 30% 1fr;
+}
+
+.grid-50-50{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-column{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width:769px) {
+    .grid-20-80,.grid-50-50,.grid-3-column,.grid-30-70{
+        grid-template-columns: 1fr;
+    }
+}
