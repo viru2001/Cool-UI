@@ -135,6 +135,13 @@
                 >Rating</a
               >
             </li>
+            <li class="m-8 text-sm">
+              <a
+                class="nav-link-item comp-nav-link-item font-wt-semibold"
+                href="#toast"
+                >Toast</a
+              >
+            </li>
           </ul>
         </nav>
       </aside>
@@ -1831,6 +1838,89 @@
             frameborder="0"
           ></iframe>
         </section>
+
+        <!-- Toast -->
+        <section class="component-container mt-6" id="toast">
+          <h3 class="headline-lg ml-6">Toast</h3>
+          <p class="text-sm ml-6"></p>
+          <div class="component-wrapper m-8 p-8 d-flex">
+            <!-- toast code to show in UI -->
+            <!-- success toast -->
+            <div
+              style="
+                background-color: var(--success-color);
+                color: var(--white-color);
+              "
+              class="text-sm d-flex align-center p-3 rounded-sm"
+            >
+              Added Successfully !
+              <button type="button" class="btn btn-icon">
+                <i
+                  class="fas fa-times text-md ml-4"
+                  style="color: var(--white-color)"
+                ></i>
+              </button>
+            </div>
+            <!-- error toast -->
+            <div
+              style="
+                background-color: var(--danger-color);
+                color: var(--white-color);
+              "
+              class="text-sm d-flex align-center p-3 rounded-sm ml-8"
+            >
+              Try Again Later !
+              <button type="button" class="btn btn-icon">
+                <i
+                  class="fas fa-times text-md ml-4"
+                  style="color: var(--white-color)"
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- demo toast code -->
+          <div
+            id="toast-success"
+            class="toast text-sm d-flex align-center p-3 rounded-sm d-none"
+          >
+            Added Successfully !
+            <button type="button" class="btn btn-icon">
+              <i class="fas fa-times text-md btn-toast-close ml-4"></i>
+            </button>
+          </div>
+          <div
+            id="toast-error"
+            class="toast text-sm d-flex align-center p-3 rounded-sm d-none"
+          >
+            Try Again Later !
+            <button type="button" class="btn btn-icon">
+              <i class="fas fa-times text-md btn-toast-close ml-4"></i>
+            </button>
+          </div>
+          <div class="component-wrapper m-8 p-8 d-flex">
+            <button
+              id="success-toast-demo-btn"
+              type="button"
+              class="btn btn-primary rounded-sm text-sm p-3"
+            >
+              Success Toast Demo
+            </button>
+
+            <button
+              id="error-toast-demo-btn"
+              type="button"
+              class="btn btn-primary rounded-sm text-sm p-3 ml-8"
+            >
+              Error Toast Demo
+            </button>
+          </div>
+          <iframe
+            src="https://www.thiscodeworks.com/embed/62114ad75362a500156c2b0c"
+            class="code-snippet ml-6"
+            frameborder="0"
+          ></iframe>
+        </section>
       </main>
     </div>
 
@@ -1862,5 +1952,6 @@
     </footer>
     <script src="../components/Modal/modal.js"></script>
     <script src="../components/Card/card.js"></script>
+    <script src="../components/Toast/toast.js"></script>
   </body>
 </html>

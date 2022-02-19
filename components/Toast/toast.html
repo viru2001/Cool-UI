@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast</title>
+    <link rel="stylesheet" href="../../styles/main.css" />
+  </head>
+  <body>
+    <!-- success toast -->
+    <div
+      id="toast-success"
+      class="toast text-sm d-flex align-center p-3 rounded-sm d-none"
+    >
+      Added Successfully !
+      <button type="button" class="btn btn-icon">
+        <i class="fas fa-times text-md btn-toast-close ml-4"></i>
+      </button>
+    </div>
+    <button
+      id="success-toast-demo-btn"
+      type="button"
+      class="btn btn-primary rounded-sm text-sm p-3"
+    >
+      Success Toast Demo
+    </button>
+
+    <!-- error toast -->
+    <div
+      id="toast-error"
+      class="toast text-sm d-flex align-center p-3 rounded-sm d-none"
+    >
+      Try Again Later !
+      <button type="button" class="btn btn-icon">
+        <i class="fas fa-times text-md btn-toast-close ml-4"></i>
+      </button>
+    </div>
+    <button
+      id="error-toast-demo-btn"
+      type="button"
+      class="btn btn-primary rounded-sm text-sm p-3"
+    >
+      Error Toast Demo
+    </button>
+    <script src="./toast.js"></script>
+  </body>
+</html>
