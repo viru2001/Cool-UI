@@ -1,4 +1,3 @@
-
 .btn {
   border: none;
   cursor: pointer;
@@ -9,24 +8,24 @@
   background-color: var(--primary-color);
 }
 .btn-primary:hover {
-  background-color: var(--primary-hover-bg);
+  background-color: var(--primary-dark-color);
 }
 .btn-danger {
   background-color: var(--danger-color);
 }
 .btn-danger:hover {
-  background-color: var(--danger-hover-bg);
+  background-color: var(--danger-dark-color);
 }
 .btn-success {
   background-color: var(--success-color);
 }
 .btn-success:hover {
-  background-color: var(--success-hover-bg);
+  background-color: var(--success-dark-color);
 }
 
-.btn[disabled]{
-    opacity: 0.5;
-    cursor:not-allowed;
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* outlined buttons */
@@ -76,5 +75,3 @@
   width: 5rem;
   height: 5rem;
 }
-
-

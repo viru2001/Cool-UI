@@ -1,26 +1,27 @@
-.navbar-wrapper{
-    background-color: var(--white-color);
+.navbar-wrapper {
+  background-color: var(--white-color);
 }
-.brand,.nav-link-item:hover{
-    cursor: pointer;
+.brand,
+.nav-link-item:hover {
+  cursor: pointer;
 }
 
-.nav-link-item:hover{
-    color: var(--primary-color);
+.nav-link-item:hover {
+  color: var(--primary-color);
 }
-.search-box{
-    border: solid 1px var(--black-color);
-    background-color: var(--white-color);
+.search-box {
+  border: solid 1px var(--dark-text-color);
+  background-color: var(--white-color);
 }
-.search-input{
-    border: none;
+.search-input {
+  border: none;
 }
-.search-input:focus{
-    outline: none;
+.search-input:focus {
+  outline: none;
 }
-.nav-links{
-    gap:2rem;
+.nav-links {
+  gap: 2rem;
 }
-.nav-icon-btn{
-    color: var(--primary-color);
+.nav-icon-btn {
+  color: var(--primary-color);
 }

@@ -1,7 +1,7 @@
-.list{
-    max-width: 80rem;
+.list {
+  max-width: 80rem;
 }
-.list-item{
-    background-color: var(--white-color);
-    border: solid 1px var(--gray-color);
+.list-item {
+  background-color: var(--white-color);
+  border: solid 1px var(--secondary-dark-color);
 }

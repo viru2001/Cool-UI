@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 .primary-nav-link-item {
-  color: var(--black-color);
+  color: var(--dark-text-color);
 }
 .primary-nav-link-item:hover {
   color: var(--primary-color);

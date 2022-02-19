@@ -72,13 +72,13 @@
 .text-center {
   text-align: center;
 }
-.text-left{
-    text-align: left;
+.text-left {
+  text-align: left;
 }
-.text-right{
-    text-align: right;
+.text-right {
+  text-align: right;
 }
 /* gray text */
-.text-gray{
-    color: var(--gray-color);
+.text-gray {
+  color: var(--secondary-dark-color);
 }

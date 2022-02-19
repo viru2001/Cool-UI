@@ -1,20 +1,22 @@
-.input-label-required:after{
-    content: "*";
-    color: var(--danger-color);
+.input-label-required:after {
+  content: "*";
+  color: var(--danger-color);
 }
 
-.text-input,.text-area{
-    border: solid 1px var(--black-color);
+.text-input,
+.text-area {
+  border: solid 1px var(--dark-text-color);
 }
 
-.text-input:focus,.text-area:focus{
-    outline:solid 2px var(--primary-color);
-    border: none;
+.text-input:focus,
+.text-area:focus {
+  outline: solid 2px var(--primary-color);
+  border: none;
 }
 
-.input-grp-err{
-    color:var(--danger-color);
+.input-grp-err {
+  color: var(--danger-color);
 }
-.input-grp-err input{
-    border: solid 2px var(--danger-color);
+.input-grp-err input {
+  border: solid 2px var(--danger-color);
 }

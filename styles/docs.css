@@ -10,7 +10,7 @@
   overflow-y: auto;
 }
 .comp-nav-link-item {
-  color: var(--black-color);
+  color: var(--dark-text-color);
 }
 .comp-nav-link-item:hover {
   color: var(--primary-color);
@@ -29,6 +29,6 @@
   margin-left: 10rem;
 }
 .component-wrapper {
-  border: solid 1px var(--black-color);
-  background-color: var(--light-gray-color);
+  border: solid 1px var(--dark-text-color);
+  background-color: var(--off-white-color);
 }
