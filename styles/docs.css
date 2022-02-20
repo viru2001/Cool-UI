@@ -8,6 +8,7 @@
 }
 .component-nav-list {
   overflow-y: auto;
+  height: 80vh;
 }
 .comp-nav-link-item {
   color: var(--dark-text-color);
