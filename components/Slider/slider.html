@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="../../styles/main.css" />
+  </head>
+  <body>
+    <!-- simple slider -->
+    <div class="d-flex align-center">
+      <input
+        type="range"
+        name="slider"
+        id="simple-slider"
+        min="0"
+        max="500"
+        value="200"
+      />
+    </div>
+    <!-- icon-slider -->
+    <div class="d-flex align-center">
+      <label for="icon-slider"
+        ><i class="fas fa-volume-up text-md mr-2"></i
+      ></label>
+      <input
+        type="range"
+        name="slider"
+        id="icon-slider"
+        min="0"
+        max="500"
+        value="250"
+      />
+    </div>
+    <!-- disabled-slider -->
+    <div class="d-flex align-center">
+      <label class="disabled-slider-label" for="disabled-slider"
+        ><i class="fas fa-volume-up text-md mr-2"></i
+      ></label>
+      <input
+        type="range"
+        name="slider"
+        id="disabled-slider"
+        min="0"
+        max="500"
+        value="300"
+        disabled
+      />
+    </div>
+  </body>
+</html>
