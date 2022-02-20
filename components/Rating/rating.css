@@ -1,0 +1,10 @@
+.rating-checked{
+    color: var(--warning-color);
+}
+.rating-unchecked{
+    color:var(--secondary-dark-color);
+}
+
+.rating-container input{
+    display: none;
+}
