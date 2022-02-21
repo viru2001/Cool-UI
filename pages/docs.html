@@ -10,158 +10,300 @@
   </head>
   <body>
     <!-- primary navigation -->
-    <header class="header d-flex align-center p-2 box-shadow-md font-wt-bold">
-      <h1 class="headline-lg m-3 logo">
-        <a class="brand-name" href="./index.html">Cool UI</a>
-      </h1>
-      <div class="ml-auto primary-nav">
-        <nav aria-label="primary navigation">
-          <ul class="d-flex align-center">
-            <li class="text-sm m-3">
-              <a
-                class="primary-nav-link-item nav-link-item"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="text-sm m-3">
-              <a
-                class="primary-nav-link-item nav-link-item font-wt-black primary-nav-active"
-                href="#"
-                >Documention</a
-              >
-            </li>
-          </ul>
-        </nav>
+    <header
+      id="primary-nav"
+      class="header d-flex justify-center align-center p-2 box-shadow-md font-wt-bold"
+    >
+      <div class="d-flex w-100">
+        <h1 class="headline-lg m-3 logo">
+          <a class="brand-name" href="../index.html">Cool UI</a>
+        </h1>
+        <button id="btn-hamburger" class="btn text-md ml-auto mr-8 p-4">
+          <i class="fas fa-bars hamburger-icon"></i>
+        </button>
       </div>
+      <nav
+        class="ml-auto nav-menu-without-hamburger-icon mr-6"
+        aria-label="primary navigation"
+      >
+        <ul class="d-flex align-center">
+          <li class="text-sm m-3">
+            <a class="primary-nav-link-item nav-link-item" href="../index.html"
+              >Home</a
+            >
+          </li>
+          <li class="text-sm m-3">
+            <a
+              class="primary-nav-link-item nav-link-item font-wt-black primary-nav-active"
+              href="#"
+              >Documention</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- hamburger nav menu -->
+      <nav
+        id="nav-menu-hamburger"
+        class="component-nav-hamburg p-sticky d-flex flex-col align-center p-8 d-none"
+        aria-label="components navigation"
+      >
+        <h2 class="headline-md m-5">Get Started</h2>
+        <ul class="component-nav-list">
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#installation"
+              >Installation</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#typography"
+              >Typography</a
+            >
+          </li>
+        </ul>
+        <h2 class="headline-md m-5">Components</h2>
+        <ul class="component-nav-list">
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#alert"
+              >Alert</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#avatar"
+              >Avatar</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#badge"
+              >Badge</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#button"
+              >Button</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#card"
+              >Card</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#image"
+              >Image</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#input"
+              >Input</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#modal"
+              >Modal</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#list"
+              >List</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#navigation"
+              >Navigation</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#grid"
+              >Grid</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#rating"
+              >Rating</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#toast"
+              >Toast</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#slider"
+              >Slider</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <div class="d-flex">
       <!-- components navigation -->
-      <aside
-        class="component-nav p-sticky box-shadow-sm d-flex flex-col align-center"
+      <nav
+        class="component-nav p-sticky d-flex flex-col align-center nav-menu-without-hamburger-icon"
+        aria-label="components navigation"
       >
-        <nav aria-label="components navigation">
-          <h2 class="headline-md m-5">Components</h2>
-          <ul class="component-nav-list">
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#typography"
-                >Typography</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#alert"
-                >Alert</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#avatar"
-                >Avatar</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#badge"
-                >Badge</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#button"
-                >Button</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#card"
-                >Card</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#image"
-                >Image</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#input"
-                >Input</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#modal"
-                >Modal</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#list"
-                >List</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#navigation"
-                >Navigation</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#grid"
-                >Grid</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#rating"
-                >Rating</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#toast"
-                >Toast</a
-              >
-            </li>
-            <li class="m-8 text-sm">
-              <a
-                class="nav-link-item comp-nav-link-item font-wt-semibold"
-                href="#slider"
-                >Slider</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </aside>
+        <h2 class="headline-md m-5">Get Started</h2>
+        <ul class="component-nav-list">
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#installation"
+              >Installation</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#typography"
+              >Typography</a
+            >
+          </li>
+        </ul>
+        <h2 class="headline-md m-5">Components</h2>
+        <ul class="component-nav-list">
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#alert"
+              >Alert</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#avatar"
+              >Avatar</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#badge"
+              >Badge</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#button"
+              >Button</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#card"
+              >Card</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#image"
+              >Image</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#input"
+              >Input</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#modal"
+              >Modal</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#list"
+              >List</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#navigation"
+              >Navigation</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#grid"
+              >Grid</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#rating"
+              >Rating</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#toast"
+              >Toast</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#slider"
+              >Slider</a
+            >
+          </li>
+        </ul>
+      </nav>
 
       <main>
         <!-- components documention -->
         <!-- Typography -->
         <section class="component-container mt-8" id="typography">
-          <h3 class="headline-lg ml-6">Typography</h3>
-          <p class="text-sm ml-6"></p>
+          <h3 class="headline-lg comp-name">Typography</h3>
+          <p class="text-sm"></p>
           <!-- Headings -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Headings</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Headings</p>
+          <div class="component-wrapper p-8 my-4">
             <h1 class="headline-xl">Headline 1</h1>
             <h2 class="headline-lg">Headline 2</h2>
             <h3 class="headline-md">Headline 3</h3>
@@ -171,13 +313,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6203b90f234b8a0015700d07"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Paragraph text  -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Paragraph Text</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Paragraph Text</p>
+          <div class="component-wrapper p-8 my-4">
             <p class="text-xl">Paragraph 1</p>
             <p class="text-lg">Paragraph 2</p>
             <p class="text-md">Paragraph 3</p>
@@ -187,26 +329,26 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6203b9a5234b8a0015700d09"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Gray text  -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Gray Text</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Gray Text</p>
+          <div class="component-wrapper p-8 my-4">
             <h2 class="headline-lg text-gray">Headline 2</h2>
             <p class="text-lg text-gray">Paragraph 2</p>
           </div>
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6203ba0c234b8a0015700d0a"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- text Alignment  -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Text Alignment</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Text Alignment</p>
+          <div class="component-wrapper p-8 my-4">
             <p class="text-lg text-left">Paragraph 2</p>
             <p class="text-lg text-center">Paragraph 2</p>
             <p class="text-lg text-right">Paragraph 2</p>
@@ -214,22 +356,22 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6203ba56234b8a0015700d0b"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Alert -->
         <section class="component-container mt-8" id="alert">
-          <h3 class="headline-lg ml-6">Alert</h3>
-          <p class="text-sm ml-6">
+          <h3 class="headline-lg comp-name">Alert</h3>
+          <p class="text-sm">
             An alert displays a short, important message in a way that attracts
             the user's attention without interrupting the user's task.
           </p>
           <!-- simple alert -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Simple Alert</p>
+          <p class="headline-md font-wt-bold mt-5">Simple Alert</p>
 
-          <div class="component-wrapper m-8 p-8">
+          <div class="component-wrapper p-8 my-4">
             <div class="alert alert-primary text-sm mx-8 p-4 rounded-sm">
               This is Primary Alert Example
             </div>
@@ -247,14 +389,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61f98ae11e1df4001537946a"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Alert with icons -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Alert with Icons</p>
+          <p class="headline-md font-wt-bold mt-5">Alert with Icons</p>
 
-          <div class="component-wrapper m-8 p-8">
+          <div class="component-wrapper p-8 my-4">
             <div
               class="alert alert-primary text-sm mx-8 p-4 rounded-sm d-flex align-center"
             >
@@ -283,16 +425,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61f98c941e1df40015379470"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- outlined alert with icons -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">
-            Outlined Alert with Icons
-          </p>
+          <p class="headline-md font-wt-bold mt-5">Outlined Alert with Icons</p>
 
-          <div class="component-wrapper m-8 p-8">
+          <div class="component-wrapper p-8 my-4">
             <div
               class="alert alert-outlined alert-primary-outlined text-sm mx-8 p-4 rounded-sm d-flex align-center"
             >
@@ -321,7 +461,7 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61f974861e1df4001537945a"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           >
           </iframe>
@@ -329,12 +469,12 @@
 
         <!-- Avatars -->
         <section class="component-container mt-8" id="avatar">
-          <h3 class="headline-lg ml-6">Avatar</h3>
-          <p class="text-sm ml-6"></p>
+          <h3 class="headline-lg comp-name">Avatar</h3>
+          <p class="text-sm"></p>
           <!-- image avatars -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Image Avatars</p>
+          <p class="headline-md font-wt-bold mt-5">Image Avatars</p>
           <div
-            class="component-wrapper m-8 p-8 d-flex justify-around align-end"
+            class="component-wrapper p-8 my-4 d-flex justify-around align-end"
           >
             <div class="avatar-lg">
               <img
@@ -373,14 +513,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fd527333c09d0015b44dba"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- text avatars -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Text Avatars</p>
+          <p class="headline-md font-wt-bold mt-5">Text Avatars</p>
           <div
-            class="component-wrapper m-8 p-8 d-flex justify-around align-end"
+            class="component-wrapper p-8 my-4 d-flex justify-around align-end"
           >
             <div
               class="avatar-lg avatar-text rounded-full text-xl d-flex justify-center align-center"
@@ -406,19 +546,19 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fd533933c09d0015b44dbb"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Badge -->
         <section class="component-container mt-8" id="badge">
-          <h3 class="headline-lg ml-6">Badge</h3>
-          <p class="text-sm ml-6"></p>
+          <h3 class="headline-lg comp-name">Badge</h3>
+          <p class="text-sm"></p>
           <!-- avatar Badges -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Avatar Badges</p>
+          <p class="headline-md font-wt-bold mt-5">Avatar Badges</p>
           <div
-            class="component-wrapper m-8 p-8 d-flex justify-around align-end"
+            class="component-wrapper p-8 my-4 d-flex justify-around align-end"
           >
             <div class="avatar-lg p-relative">
               <img
@@ -471,13 +611,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fd549533c09d0015b44dbc"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- text Badges -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Text Badges</p>
-          <div class="component-wrapper m-8 p-8 d-flex flex-col">
+          <p class="headline-md font-wt-bold mt-5">Text Badges</p>
+          <div class="component-wrapper p-8 my-4 d-flex flex-col">
             <h1>
               <span class="p-relative headline-lg"
                 >Heading with a badge<span
@@ -499,13 +639,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fd558633c09d0015b44dbe"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Button Badges -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Button Badges</p>
-          <div class="component-wrapper m-8 p-8 d-flex justify-around">
+          <p class="headline-md font-wt-bold mt-5">Button Badges</p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
             <button
               type="button"
               class="btn btn-success p-3 rounded-sm p-relative"
@@ -531,13 +671,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fd563c33c09d0015b44dbf"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Icon Badges -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Icon Badges</p>
-          <div class="component-wrapper m-8 p-8 d-flex justify-around">
+          <p class="headline-md font-wt-bold mt-5">Icon Badges</p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
             <div class="p-relative text-md icon-badge-wrapper">
               <i class="fas fa-shopping-cart"></i>
               <span
@@ -557,22 +697,22 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fd56c233c09d0015b44dc0"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Button -->
         <section class="component-container mt-8" id="button">
-          <h3 class="headline-lg ml-6">Button</h3>
-          <p class="text-sm ml-6">
+          <h3 class="headline-lg comp-name">Button</h3>
+          <p class="text-sm">
             Buttons are the soul of an interactive Web Application. Buttons
             allow users to take actions, and make choices, with a single tap.
           </p>
           <!-- normal button -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Normal Button</p>
+          <p class="headline-md font-wt-bold mt-5">Normal Button</p>
 
-          <div class="component-wrapper m-8 p-8 d-flex justify-around">
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
             <button
               type="button"
               class="btn rounded-sm text-sm p-3 btn-primary"
@@ -596,13 +736,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fa3c3bb783be0015bbae5c"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
           <!-- Large button -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Large Button</p>
+          <p class="headline-md font-wt-bold mt-5">Large Button</p>
 
-          <div class="component-wrapper m-8 p-8 d-flex justify-around">
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
             <button
               type="button"
               class="btn btn-primary rounded-sm text-md p-5"
@@ -626,14 +766,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fa3be4b783be0015bbae59"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- outlined button -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Outlined Button</p>
+          <p class="headline-md font-wt-bold mt-5">Outlined Button</p>
 
-          <div class="component-wrapper m-8 p-8 d-flex justify-around">
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
             <button
               class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
             >
@@ -654,14 +794,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fa43e9b783be0015bbae64"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- link button -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Link Button</p>
+          <p class="headline-md font-wt-bold mt-5">Link Button</p>
 
-          <div class="component-wrapper m-8 p-8 d-flex justify-center">
+          <div class="component-wrapper p-8 my-4 d-flex justify-center">
             <button type="button" class="btn btn-link p-3 text-sm rounded-sm">
               <a href="#">Link Button</a>
             </button>
@@ -670,14 +810,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fa4453b783be0015bbae65"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- icon button -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Icon Button</p>
+          <p class="headline-md font-wt-bold mt-5">Icon Button</p>
 
-          <div class="component-wrapper m-8 p-8 d-flex justify-around">
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
             <button type="button" class="btn btn-icon">
               <i class="fas fa-heart text-md"></i>
             </button>
@@ -692,16 +832,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fa44f0b783be0015bbae67"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- icon button with label -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">
-            Icon Button with label
-          </p>
+          <p class="headline-md font-wt-bold mt-5">Icon Button with label</p>
 
-          <div class="component-wrapper m-8 p-8 d-flex justify-around">
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
             <button type="button" class="btn btn-primary p-4 rounded-sm">
               <i class="fas fa-bolt mr-2"></i> Buy now
             </button>
@@ -716,14 +854,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fa45ccb783be0015bbae68"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- floating button -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Floating Button</p>
+          <p class="headline-md font-wt-bold mt-5">Floating Button</p>
 
-          <div class="component-wrapper m-8 p-8 d-flex justify-around">
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
             <button
               class="btn btn-primary btn-floating p-4 rounded-full box-shadow-lg"
             >
@@ -744,21 +882,21 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fa4679b783be0015bbae6b"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Cards -->
         <section class="component-container mt-8" id="card">
-          <h3 class="headline-lg ml-6">Card</h3>
-          <p class="text-sm ml-6">
+          <h3 class="headline-lg comp-name">Card</h3>
+          <p class="text-sm">
             Card are used to show user related data collectively, like product
             details.
           </p>
           <!-- Vertical card -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Vertical Card</p>
-          <div class="component-wrapper m-8 p-8 container-center">
+          <p class="headline-md font-wt-bold mt-5">Vertical Card</p>
+          <div class="component-wrapper p-8 my-4 container-center">
             <div class="card-wrapper product-card">
               <div class="px-4">
                 <img
@@ -778,7 +916,7 @@
                   <span class="product-discount-price text-sm font-wt-bold"
                     >Rs. 1,790.00</span
                   >
-                  <span class="product-original-price text-sm ml-6"
+                  <span class="product-original-price text-sm"
                     >Rs. 2,999.00</span
                   >
                 </div>
@@ -807,14 +945,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/62010eaa4dd44f0015f3cdf9"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Horizontal card -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Horizontal Card</p>
+          <p class="headline-md font-wt-bold mt-5">Horizontal Card</p>
           <div
-            class="component-wrapper m-8 p-8 container-center d-flex flex-col"
+            class="component-wrapper p-8 my-4 container-center d-flex flex-col"
           >
             <div
               class="card-wrapper product-card horizontal-card-wrapper d-flex"
@@ -837,7 +975,7 @@
                     <span class="product-discount-price text-sm font-wt-bold"
                       >Rs. 7,999.00</span
                     >
-                    <span class="product-original-price text-sm ml-6"
+                    <span class="product-original-price text-sm"
                       >Rs. 9,438.82</span
                     >
                   </div>
@@ -884,7 +1022,7 @@
                     <span class="product-discount-price text-sm font-wt-bold"
                       >Rs. 7,999.00</span
                     >
-                    <span class="product-original-price text-sm ml-6"
+                    <span class="product-original-price text-sm"
                       >Rs. 9,438.82</span
                     >
                   </div>
@@ -931,13 +1069,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/62010fa44dd44f0015f3cdfd"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- card with badge-->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Card with Badge</p>
-          <div class="component-wrapper m-8 p-8 container-center">
+          <p class="headline-md font-wt-bold mt-5">Card with Badge</p>
+          <div class="component-wrapper p-8 my-4 container-center">
             <div class="card-wrapper product-card">
               <span class="vertical-card-badge text-sm p-3 p-relative"
                 >Best Seller</span
@@ -960,7 +1098,7 @@
                   <span class="product-discount-price text-sm font-wt-bold"
                     >Rs. 1,790.00</span
                   >
-                  <span class="product-original-price text-sm ml-6"
+                  <span class="product-original-price text-sm"
                     >Rs. 2,999.00</span
                   >
                 </div>
@@ -989,13 +1127,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/620110884dd44f0015f3cdff"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- card with dismiss button-->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Card with Dismiss</p>
-          <div class="component-wrapper m-8 p-8 container-center">
+          <p class="headline-md font-wt-bold mt-5">Card with Dismiss</p>
+          <div class="component-wrapper p-8 my-4 container-center">
             <button
               type="button"
               class="btn rounded-sm text-sm p-3 btn-primary reset-dismissed-card"
@@ -1024,7 +1162,7 @@
                   <span class="product-discount-price text-sm font-wt-bold"
                     >Rs. 1,790.00</span
                   >
-                  <span class="product-original-price text-sm ml-6"
+                  <span class="product-original-price text-sm"
                     >Rs. 2,999.00</span
                   >
                 </div>
@@ -1053,13 +1191,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6201144aed723a001551bf80"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- card with shadow-->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Card with Shadow</p>
-          <div class="component-wrapper m-8 p-8 container-center">
+          <p class="headline-md font-wt-bold mt-5">Card with Shadow</p>
+          <div class="component-wrapper p-8 my-4 container-center">
             <div class="card-wrapper product-card box-shadow-lg">
               <div class="px-4">
                 <img
@@ -1079,7 +1217,7 @@
                   <span class="product-discount-price text-sm font-wt-bold"
                     >Rs. 1,790.00</span
                   >
-                  <span class="product-original-price text-sm ml-6"
+                  <span class="product-original-price text-sm"
                     >Rs. 2,999.00</span
                   >
                 </div>
@@ -1108,15 +1246,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/62011534ed723a001551bf81"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- card with text overlay-->
-          <p class="headline-md font-wt-bold mt-5 ml-6">
-            Card with text overlay
-          </p>
-          <div class="component-wrapper m-8 p-8 container-center">
+          <p class="headline-md font-wt-bold mt-5">Card with text overlay</p>
+          <div class="component-wrapper p-8 my-4 container-center">
             <div class="card-wrapper product-card p-relative">
               <div class="px-4">
                 <img
@@ -1136,7 +1272,7 @@
                   <span class="product-discount-price text-sm font-wt-bold"
                     >Rs. 1,790.00</span
                   >
-                  <span class="product-original-price text-sm ml-6"
+                  <span class="product-original-price text-sm"
                     >Rs. 2,999.00</span
                   >
                 </div>
@@ -1172,13 +1308,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/620115b4ed723a001551bf85"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Text only card-->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Text only card</p>
-          <div class="component-wrapper m-8 p-8 container-center">
+          <p class="headline-md font-wt-bold mt-5">Text only card</p>
+          <div class="component-wrapper p-8 my-4 container-center">
             <div class="card-wrapper product-card">
               <div class="p-2">
                 <h2 class="text-center headline-md">Card header</h2>
@@ -1196,22 +1332,22 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/62011637ed723a001551bf89"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- image -->
         <section class="component-container mt-8" id="image">
-          <h3 class="headline-lg ml-6">Image</h3>
-          <p class="text-sm ml-6">
+          <h3 class="headline-lg comp-name">Image</h3>
+          <p class="text-sm">
             Responsive Image Components are used to display Images on websites,
             which are screen responsive. They expand upto the width of the
             container they are in.
           </p>
           <!-- Responsive image -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Responsive Image</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Responsive Image</p>
+          <div class="component-wrapper p-8 my-4">
             <img
               loading="lazy"
               class="img-responsive"
@@ -1222,14 +1358,14 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fbdf096ab14d0015c32d69"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- round images -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Round Image</p>
-          <div class="component-wrapper m-8 p-8 d-flex justify-around">
-            <div>
+          <p class="headline-md font-wt-bold mt-5">Round Image</p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
+            <div class="w-25">
               <img
                 loading="lazy"
                 class="img-round rounded-full"
@@ -1237,7 +1373,7 @@
                 alt="tiger"
               />
             </div>
-            <div>
+            <div class="w-25">
               <img
                 loading="lazy"
                 class="img-round rounded-full"
@@ -1249,21 +1385,21 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fbe0836ab14d0015c32d6a"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Input -->
         <section class="component-container mt-8" id="input">
-          <h3 class="headline-lg ml-6">Input</h3>
-          <p class="text-sm ml-6">
+          <h3 class="headline-lg comp-name">Input</h3>
+          <p class="text-sm">
             Inputs are necessary for user interaction with the website. Inputs
             are used to take information from the user
           </p>
           <!-- Label inputs -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Label Inputs</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Label Inputs</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="d-flex flex-col">
               <label class="input-label-required text-sm" for="email"
                 >Email</label
@@ -1335,18 +1471,18 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/61fbe4476ab14d0015c32d79"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Modal -->
         <section class="component-container mt-8" id="modal">
-          <h3 class="headline-lg ml-6">Modal</h3>
-          <p class="text-sm ml-6"></p>
+          <h3 class="headline-lg comp-name">Modal</h3>
+          <p class="text-sm"></p>
           <!-- Simple Modal -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Simple Modal</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Simple Modal</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="modal-container rounded-md">
               <div class="p-8">
                 <h2 class="headline-md">Modal header</h2>
@@ -1373,7 +1509,7 @@
               </div>
             </div>
           </div>
-          <div class="component-wrapper m-8 p-8">
+          <div class="component-wrapper p-8 my-4">
             <button
               class="btn btn-primary rounded-sm text-sm p-3"
               id="simple-modal-demo-btn"
@@ -1415,13 +1551,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/62026580ed723a001551c1fe"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- list  modal -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">List Modal</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">List Modal</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="modal-container rounded-md">
               <div class="p-8">
                 <h2 class="headline-md">Modal header</h2>
@@ -1448,7 +1584,7 @@
               </div>
             </div>
           </div>
-          <div class="component-wrapper m-8 p-8">
+          <div class="component-wrapper p-8 my-4">
             <button
               class="btn btn-primary rounded-sm text-sm p-3"
               id="list-modal-demo-btn"
@@ -1490,18 +1626,18 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6202d9f2234b8a0015700c0a"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- List -->
         <section class="component-container mt-8" id="list">
-          <h3 class="headline-lg ml-6">List</h3>
-          <p class="text-sm ml-6"></p>
+          <h3 class="headline-lg comp-name">List</h3>
+          <p class="text-sm"></p>
           <!-- Spaced List -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Spaced List</p>
-          <div class="component-wrapper m-8 p-8 d-flex justify-center">
+          <p class="headline-md font-wt-bold mt-5">Spaced List</p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-center">
             <ul class="list p-8">
               <li class="list-item mt-4">
                 <div class="p-4">
@@ -1580,13 +1716,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/620424bdc6efb50015062dc1"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Stacked List -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Stacked List</p>
-          <div class="component-wrapper m-8 p-8 d-flex justify-center">
+          <p class="headline-md font-wt-bold mt-5">Stacked List</p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-center">
             <ul class="list p-8">
               <li class="list-item">
                 <div class="p-4">
@@ -1665,19 +1801,19 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6204255ec6efb50015062dc4"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Navigation -->
         <section class="component-container mt-8" id="navigation">
-          <h3 class="headline-lg ml-6">Navigation</h3>
-          <p class="text-sm ml-6"></p>
+          <h3 class="headline-lg comp-name">Navigation</h3>
+          <p class="text-sm"></p>
 
           <!-- simple navbar -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Simple Navigation</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Simple Navigation</p>
+          <div class="component-wrapper p-8 my-4">
             <header class="navbar-wrapper d-flex align-center box-shadow-lg">
               <h1 class="brand headline-lg m-4">Brand</h1>
               <nav class="ml-auto">
@@ -1693,17 +1829,17 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6204e3dcc6efb50015062e45"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Navigation with Search bar -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">
+          <p class="headline-md font-wt-bold mt-5">
             Navigation with Search-bar
           </p>
-          <div class="component-wrapper m-8 p-8">
+          <div class="component-wrapper p-8 my-4">
             <header
-              class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+              class="navbar-wrapper d-flex flex-wrap align-center justify-around box-shadow-lg"
             >
               <h1 class="brand headline-lg p-4">Brand</h1>
               <div
@@ -1732,17 +1868,17 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6204e4e7c6efb50015062e4a"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- Navigation with search bar and button -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">
+          <p class="headline-md font-wt-bold mt-5">
             Navigation with search-bar and buttons
           </p>
-          <div class="component-wrapper m-8 p-8">
+          <div class="component-wrapper p-8 my-4">
             <header
-              class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+              class="navbar-wrapper d-flex flex-wrap align-center justify-around box-shadow-lg"
             >
               <h1 class="brand headline-lg p-4">Brand</h1>
               <div
@@ -1774,17 +1910,17 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6204e571c6efb50015062e4e"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!--  navigation with serch-bar and icon buttons -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">
+          <p class="headline-md font-wt-bold mt-5">
             Navigation with search-bar and icon buttons
           </p>
-          <div class="component-wrapper m-8 p-8">
+          <div class="component-wrapper p-8 my-4">
             <header
-              class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+              class="navbar-wrapper d-flex flex-wrap align-center justify-around box-shadow-lg"
             >
               <h1 class="brand headline-lg p-4">Brand</h1>
               <div
@@ -1829,16 +1965,16 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6204e61ac6efb50015062e51"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!--  navigation with hamburger -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">
+          <p class="headline-md font-wt-bold mt-5">
             Mobile Navigation with hamburger menu
           </p>
-          <p class="text-sm ml-6">Resize the screen to see hamburger menu</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="text-sm">Resize the screen to see hamburger menu</p>
+          <div class="component-wrapper p-8 my-4">
             <header
               class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
             >
@@ -1944,9 +2080,7 @@
                     href="#"
                   >
                     <i class="fas fa-store text-md"></i>
-                    <span class="nav-link-description text-sm ml-6"
-                      >Products</span
-                    >
+                    <span class="nav-link-description text-sm">Products</span>
                   </a>
                   <a
                     class="nav-link-icon icon-badge-wrapper m-3 d-flex align-center text-dec-none"
@@ -1959,7 +2093,7 @@
                         >5</span
                       ></span
                     >
-                    <span class="nav-link-description text-sm ml-6">Cart</span>
+                    <span class="nav-link-description text-sm">Cart</span>
                   </a>
                   <a
                     class="nav-link-icon icon-badge-wrapper m-3 d-flex align-center text-dec-none"
@@ -1972,9 +2106,7 @@
                         >7</span
                       ></span
                     >
-                    <span class="nav-link-description text-sm ml-6"
-                      >Wishlist</span
-                    >
+                    <span class="nav-link-description text-sm">Wishlist</span>
                   </a>
                 </div>
               </nav>
@@ -1983,19 +2115,19 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/6213673511c4db00151a7e3a"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Grid -->
         <section class="component-container mt-8" id="grid">
-          <h3 class="headline-lg ml-6">Grid</h3>
-          <p class="text-sm ml-6"></p>
+          <h3 class="headline-lg comp-name">Grid</h3>
+          <p class="text-sm"></p>
 
           <!-- grid 20-80 -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">20-80 Grid layout</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">20-80 Grid layout</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="d-grid grid-20-80 gap-1">
               <div class="grid-item text-center text-md">Column 1</div>
               <div class="grid-item text-center text-md">Column 2</div>
@@ -2004,13 +2136,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/621121c41cc8b9001542ee78"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- grid 30-70 -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">30-70 Grid layout</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">30-70 Grid layout</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="d-grid grid-30-70 gap-1">
               <div class="grid-item text-center text-md">Column 1</div>
               <div class="grid-item text-center text-md">Column 2</div>
@@ -2019,13 +2151,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/621122581cc8b9001542ee79"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- grid 50-50 -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">50-50 Grid layout</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">50-50 Grid layout</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="d-grid grid-50-50 gap-1">
               <div class="grid-item text-center text-md">Column 1</div>
               <div class="grid-item text-center text-md">Column 2</div>
@@ -2034,13 +2166,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/621122b11cc8b9001542ee7a"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- grid 3 columns -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">3 column Grid layout</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">3 column Grid layout</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="d-grid grid-3-column gap-1">
               <div class="grid-item text-center text-md">Column 1</div>
               <div class="grid-item text-center text-md">Column 2</div>
@@ -2050,16 +2182,16 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/621122fe1cc8b9001542ee7b"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Rating -->
         <section class="component-container mt-6" id="rating">
-          <h3 class="headline-lg ml-6">Rating</h3>
-          <p class="text-sm ml-6"></p>
-          <div class="component-wrapper m-8 p-8">
+          <h3 class="headline-lg comp-name">Rating</h3>
+          <p class="text-sm"></p>
+          <div class="component-wrapper p-8 my-4">
             <div class="rating-container text-md">
               <input type="checkbox" id="star-1" checked disabled />
               <label for="star-1" class="fas fa-star rating-checked"></label>
@@ -2076,16 +2208,16 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/62113af15362a500156c2b03"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Toast -->
         <section class="component-container mt-6" id="toast">
-          <h3 class="headline-lg ml-6">Toast</h3>
-          <p class="text-sm ml-6"></p>
-          <div class="component-wrapper m-8 p-8 d-flex">
+          <h3 class="headline-lg comp-name">Toast</h3>
+          <p class="text-sm"></p>
+          <div class="component-wrapper p-8 my-4 d-flex">
             <!-- toast code to show in UI -->
             <!-- success toast -->
             <div
@@ -2140,7 +2272,7 @@
               <i class="fas fa-times text-md btn-toast-close ml-4"></i>
             </button>
           </div>
-          <div class="component-wrapper m-8 p-8 d-flex">
+          <div class="component-wrapper p-8 my-4 d-flex">
             <button
               id="success-toast-demo-btn"
               type="button"
@@ -2160,18 +2292,18 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/62114ad75362a500156c2b0c"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
 
         <!-- Slider -->
         <section class="component-container mt-8" id="slider">
-          <h3 class="headline-lg ml-6">Slider</h3>
-          <p class="text-sm ml-6"></p>
+          <h3 class="headline-lg comp-name">Slider</h3>
+          <p class="text-sm"></p>
           <!-- simple slider -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Simple Slider</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Simple Slider</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="d-flex align-center">
               <input
                 type="range"
@@ -2188,13 +2320,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/621271465362a500156c2c08"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- styled slider -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Styled Slider</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Styled Slider</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="d-flex align-center">
               <input
                 type="range"
@@ -2209,13 +2341,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/621333ac11c4db00151a7e0f"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- sider with icon -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">Slider with Icon</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">Slider with Icon</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="d-flex align-center">
               <label for="icon-slider"
                 ><i class="fas fa-volume-up text-md mr-2"></i
@@ -2233,13 +2365,13 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/621272235362a500156c2c09"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
 
           <!-- disabled slider -->
-          <p class="headline-md font-wt-bold mt-5 ml-6">disabled Slider</p>
-          <div class="component-wrapper m-8 p-8">
+          <p class="headline-md font-wt-bold mt-5">disabled Slider</p>
+          <div class="component-wrapper p-8 my-4">
             <div class="d-flex align-center">
               <label class="disabled-slider-label" for="disabled-slider"
                 ><i class="fas fa-volume-up text-md mr-2"></i
@@ -2258,7 +2390,7 @@
           <iframe
             loading="lazy"
             src="https://www.thiscodeworks.com/embed/621272de5362a500156c2c0a"
-            class="code-snippet ml-6"
+            class="code-snippet"
             frameborder="0"
           ></iframe>
         </section>
@@ -2296,5 +2428,6 @@
     <script src="../components/Toast/toast.js"></script>
     <script src="../components/Slider/slider.js"></script>
     <script src="../components/Navigation/navigation.js"></script>
+    <script src="../js/docs-nav.js"></script>
   </body>
 </html>
