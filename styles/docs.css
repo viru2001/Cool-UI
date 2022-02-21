@@ -78,22 +78,30 @@ main {
   .component-nav {
     display: none;
   }
+
   main {
     width: 100%;
   }
+
   #primary-nav {
     position: fixed;
     top: 0;
     z-index: 1;
-    background-color: #fff;
+    background-color: var(--white-color);
     width: 100vw;
     flex-wrap: wrap;
   }
+
   .nav-menu-without-hamburger-icon {
     display: none;
   }
+
   #btn-hamburger {
     display: block;
+  }
+
+  #typography {
+    margin-top: 8rem;
   }
 }
 
