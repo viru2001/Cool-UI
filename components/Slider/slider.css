@@ -1,3 +1,26 @@
-.disabled-slider-label{
-    opacity: 0.4;
+/* simple slider */
+.simple-slider,.styled-slider,.icon-slider,.disabled-slider{
+    width: 20rem;
+}
+/* disabled sider */
+.disabled-slider-label {
+  opacity: 0.4;
+}
+/* #styled-slider */
+.styled-slider {
+  -webkit-appearance: none;
+  height: 2rem;
+  background: linear-gradient(to right, var(--primary-light-color) 0%, var(--primary-light-color) 100%);
+  background-size: 20rem 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+}
+
+.styled-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2rem;
+  background: var(--primary-dark-color);
 }

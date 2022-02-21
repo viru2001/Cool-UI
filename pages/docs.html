@@ -2022,7 +2022,30 @@
               <input
                 type="range"
                 name="slider"
-                id="simple-slider"
+                class="simple-slider"
+                min="0"
+                max="500"
+                value="200"
+                step="20"
+              />
+            </div>
+            <p id="slider-value" class="text-sm mt-4">You selected 200</p>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621271465362a500156c2c08"
+            class="code-snippet ml-6"
+            frameborder="0"
+          ></iframe>
+
+          <!-- styled slider -->
+          <p class="headline-md font-wt-bold mt-5 ml-6">Styled Slider</p>
+          <div class="component-wrapper m-8 p-8">
+            <div class="d-flex align-center">
+              <input
+                type="range"
+                name="slider"
+                class="styled-slider"
                 min="0"
                 max="500"
                 value="200"
@@ -2031,7 +2054,7 @@
           </div>
           <iframe
             loading="lazy"
-            src="https://www.thiscodeworks.com/embed/621271465362a500156c2c08"
+            src="https://www.thiscodeworks.com/embed/621333ac11c4db00151a7e0f"
             class="code-snippet ml-6"
             frameborder="0"
           ></iframe>
@@ -2045,8 +2068,8 @@
               ></label>
               <input
                 type="range"
+                class="icon-slider"
                 name="slider"
-                id="icon-slider"
                 min="0"
                 max="500"
                 value="250"
@@ -2070,7 +2093,7 @@
               <input
                 type="range"
                 name="slider"
-                id="disabled-slider"
+                class="disabled-slider"
                 min="0"
                 max="500"
                 value="300"
@@ -2117,5 +2140,6 @@
     <script src="../components/Modal/modal.js"></script>
     <script src="../components/Card/card.js"></script>
     <script src="../components/Toast/toast.js"></script>
+    <script src="../components/Slider/slider.js"></script>
   </body>
 </html>

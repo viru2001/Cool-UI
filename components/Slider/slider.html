@@ -8,16 +8,29 @@
     <link rel="stylesheet" href="../../styles/main.css" />
   </head>
   <body>
+    <!-- styled slider -->
+    <div class="d-flex align-center">
+      <input
+        type="range"
+        name="slider"
+        class="styled-slider"
+        min="0"
+        max="500"
+        value="200"
+      />
+    </div>
     <!-- simple slider -->
     <div class="d-flex align-center">
       <input
         type="range"
         name="slider"
-        id="simple-slider"
+        class="simple-slider"
         min="0"
         max="500"
         value="200"
+        step="50"
       />
+      <p id="slider-value" class="text-sm"></p>
     </div>
     <!-- icon-slider -->
     <div class="d-flex align-center">
@@ -27,7 +40,7 @@
       <input
         type="range"
         name="slider"
-        id="icon-slider"
+        class="icon-slider"
         min="0"
         max="500"
         value="250"
@@ -41,12 +54,13 @@
       <input
         type="range"
         name="slider"
-        id="disabled-slider"
+        class="disabled-slider"
         min="0"
         max="500"
         value="300"
         disabled
       />
     </div>
+    <script src="./slider.js"></script>
   </body>
 </html>
