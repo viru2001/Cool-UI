@@ -1,6 +1,7 @@
 .navbar-wrapper {
   background-color: var(--white-color);
 }
+
 .brand,
 .nav-link-item:hover {
   cursor: pointer;
@@ -9,19 +10,24 @@
 .nav-link-item:hover {
   color: var(--primary-color);
 }
+
 .search-box {
   border: solid 1px var(--dark-text-color);
   background-color: var(--white-color);
 }
+
 .search-input {
   border: none;
 }
+
 .search-input:focus {
   outline: none;
 }
+
 .nav-links {
   gap: 2rem;
 }
+
 .nav-icon-btn {
   color: var(--primary-color);
 }
@@ -30,22 +36,28 @@
 .brand-name {
   color: var(--primary-color);
 }
+
 .text-dec-none {
   text-decoration: none;
 }
+
 .search-box {
   width: 50rem;
 }
+
 .search-input {
   width: 45rem;
 }
+
 .nav-link-icon {
   cursor: pointer;
   color: var(--black-color);
 }
+
 .nav-link-icon:hover {
   color: var(--primary-color);
 }
+
 li {
   list-style-type: none;
 }
@@ -54,9 +66,11 @@ li {
 .hamburger-icon {
   color: var(--primary-color);
 }
+
 #hamburger-btn {
   display: none;
 }
+
 #hamburger-nav-menu {
   background-color: var(--white-color);
   border-bottom: solid 2px var(--secondary-dark-color);
@@ -66,9 +80,11 @@ li {
   #nav-menu-without-hamburger {
     display: none;
   }
+
   #hamburger-btn {
     display: block;
   }
+
   .search-box {
     width: 80vw;
   }
