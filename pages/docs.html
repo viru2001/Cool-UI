@@ -1832,6 +1832,160 @@
             class="code-snippet ml-6"
             frameborder="0"
           ></iframe>
+
+          <!--  navigation with hamburger -->
+          <p class="headline-md font-wt-bold mt-5 ml-6">
+            Mobile Navigation with hamburger menu
+          </p>
+          <p class="text-sm ml-6">Resize the screen to see hamburger menu</p>
+          <div class="component-wrapper m-8 p-8">
+            <header
+              class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+            >
+              <a
+                class="brand-name text-dec-none headline-lg font-wt-bold p-4"
+                href="#"
+                >Gamers Zone</a
+              >
+              <button id="hamburger-btn" class="btn text-md ml-auto mr-8 p-4">
+                <i class="fas fa-bars hamburger-icon"></i>
+              </button>
+              <section id="nav-menu-without-hamburger" class="d-flex">
+                <div
+                  class="search-box d-flex align-center justify-between my-8 w-50"
+                >
+                  <input
+                    type="text"
+                    class="search-input p-2 m-2 text-sm"
+                    placeholder="Search for products..."
+                    required
+                  />
+                  <button type="submit" class="btn btn-icon p-4">
+                    <i class="fas fa-search text-md"></i>
+                  </button>
+                </div>
+                <nav class="nav-links d-flex align-center">
+                  <a
+                    href="#"
+                    class="btn text-dec-none btn-primary rounded-sm text-sm p-4 ml-4"
+                  >
+                    Signup
+                  </a>
+
+                  <a
+                    class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+                    href="#"
+                  >
+                    <i class="fas fa-store text-md"></i>
+                    <span class="nav-link-description text-sm">Products</span>
+                  </a>
+                  <a
+                    class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+                    href="#"
+                  >
+                    <span class="p-relative"
+                      ><i class="fas fa-shopping-cart text-md"></i>
+                      <span
+                        class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                        >5</span
+                      ></span
+                    >
+                    <span class="nav-link-description text-sm">Cart</span>
+                  </a>
+                  <a
+                    class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+                    href="#"
+                  >
+                    <span class="p-relative">
+                      <i class="fas fa-heart text-md"></i>
+                      <span
+                        class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                        >7</span
+                      ></span
+                    >
+                    <span class="nav-link-description text-sm">Wishlist</span>
+                  </a>
+                </nav>
+              </section>
+            </header>
+
+            <!-- hamburger nav menu -->
+            <section id="hamburger-nav-menu" class="d-none p-8">
+              <div class="d-flex align-center justify-center">
+                <div
+                  class="search-box ml-8 d-flex align-center justify-between my-8 w-50"
+                >
+                  <input
+                    type="text"
+                    class="search-input p-2 m-2 text-sm"
+                    placeholder="Search for products..."
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-search btn-icon p-4 p-relative"
+                  >
+                    <i class="fas fa-search text-md"></i>
+                  </button>
+                </div>
+                <div class="ml-8">
+                  <a
+                    href="#"
+                    class="btn text-dec-none btn-primary rounded-sm text-sm p-4 mr-4"
+                  >
+                    Signup
+                  </a>
+                </div>
+              </div>
+              <nav class="nav-links">
+                <div class="d-flex ml-4 justify-around">
+                  <a
+                    class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex align-center text-dec-none"
+                    href="#"
+                  >
+                    <i class="fas fa-store text-md"></i>
+                    <span class="nav-link-description text-sm ml-6"
+                      >Products</span
+                    >
+                  </a>
+                  <a
+                    class="nav-link-icon icon-badge-wrapper m-3 d-flex align-center text-dec-none"
+                    href="#"
+                  >
+                    <span class="p-relative"
+                      ><i class="fas fa-shopping-cart text-md"></i>
+                      <span
+                        class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                        >5</span
+                      ></span
+                    >
+                    <span class="nav-link-description text-sm ml-6">Cart</span>
+                  </a>
+                  <a
+                    class="nav-link-icon icon-badge-wrapper m-3 d-flex align-center text-dec-none"
+                    href="#"
+                  >
+                    <span class="p-relative">
+                      <i class="fas fa-heart text-md"></i>
+                      <span
+                        class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                        >7</span
+                      ></span
+                    >
+                    <span class="nav-link-description text-sm ml-6"
+                      >Wishlist</span
+                    >
+                  </a>
+                </div>
+              </nav>
+            </section>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6213673511c4db00151a7e3a"
+            class="code-snippet ml-6"
+            frameborder="0"
+          ></iframe>
         </section>
 
         <!-- Grid -->
@@ -2141,5 +2295,6 @@
     <script src="../components/Card/card.js"></script>
     <script src="../components/Toast/toast.js"></script>
     <script src="../components/Slider/slider.js"></script>
+    <script src="../components/Navigation/navigation.js"></script>
   </body>
 </html>

@@ -25,3 +25,51 @@
 .nav-icon-btn {
   color: var(--primary-color);
 }
+
+/* navbar */
+.brand-name {
+  color: var(--primary-color);
+}
+.text-dec-none {
+  text-decoration: none;
+}
+.search-box {
+  width: 50rem;
+}
+.search-input {
+  width: 45rem;
+}
+.nav-link-icon {
+  cursor: pointer;
+  color: var(--black-color);
+}
+.nav-link-icon:hover {
+  color: var(--primary-color);
+}
+li {
+  list-style-type: none;
+}
+
+/* hamburger icon */
+.hamburger-icon {
+  color: var(--primary-color);
+}
+#hamburger-btn {
+  display: none;
+}
+#hamburger-nav-menu {
+  background-color: var(--white-color);
+  border-bottom: solid 2px var(--secondary-dark-color);
+}
+
+@media (max-width: 1038px) {
+  #nav-menu-without-hamburger {
+    display: none;
+  }
+  #hamburger-btn {
+    display: block;
+  }
+  .search-box {
+    width: 80vw;
+  }
+}
