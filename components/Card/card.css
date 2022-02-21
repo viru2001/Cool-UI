@@ -8,7 +8,7 @@
 }
 
 .product-discount {
-  color: var(--success-color);
+  color: var(--success-dark-color);
 }
 .product-original-price {
   text-decoration: line-through;
