@@ -4,32 +4,46 @@
 .promo-text-heading {
   color: var(--primary-color);
 }
-.no-style-link{
+.no-style-link {
   text-decoration: none;
   color: inherit;
 }
-.btn {
-  outline: none;
-  border: none;
+
+.promotion-container {
+  height: calc(100vh - 15rem);
+}
+.promo-text{
+  width: 70%;
 }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-}
-.btn-secondary{
-  background-color: transparent;
-  color:var(--primary-color);
-  border: solid 1px var(--primary-color);
+ .promo-text{
+    font-size: 2.4rem;
+ }
+ .promo-data-wrapper{
+   margin-left: 2%;
+ }
+
+@media (max-width: 800px) {
+  
+  .promotion-container {
+    flex-direction: column-reverse;
+  }
+  #promo-img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  .promo-data-wrapper{
+    display: block;
+    margin: 0 0 5% 15%;
+  }
+  .promo-text{
+    font-size: 2rem;
+  }
 }
 
-/* to make footer stick to bottom */
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+@media (max-width: 500px){
+  .promo-text{
+    font-size: 1.8rem;
+  }
 }
-footer{
-  margin-top: auto;
-}
-
