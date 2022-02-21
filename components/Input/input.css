@@ -20,3 +20,11 @@
 .input-grp-err input {
   border: solid 2px var(--danger-color);
 }
+
+.input-grp-success{
+  color: var(--success-color);
+}
+
+.input-grp-success input{
+  border: solid 2px var(--success-color);
+}

@@ -3,16 +3,20 @@
 }
 /* normal alerts */
 .alert-primary {
-  background-color: var(--primary-color);
+  background-color: var(--primary-faint-color);
+  color: var(--primary-color);
 }
 .alert-danger {
-  background-color: var(--danger-color);
+  background-color: var(--danger-light-color);
+  color: var(--danger-color);
 }
 .alert-success {
-  background-color: var(--success-color);
+  background-color: var(--success-light-color);
+  color: var(--success-dark-color);
 }
 .alert-warning {
-  background-color: var(--warning-color);
+  background-color: var(--warning-light-color);
+  color: var(--warning-color);
 }
 /* outlined alerts */
 .alert-outlined{
