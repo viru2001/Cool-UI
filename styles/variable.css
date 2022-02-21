@@ -14,11 +14,14 @@
   --secondary-color:#a9a9a9;
   --secondary-dark-color: #808080;
  
+  --danger-light-color:#FED7D7;
   --danger-color: #f44336;
   --danger-dark-color: #d31609;
-
+  
+  --success-light-color:#C6F6D5;
   --success-color: #4caf50;
   --success-dark-color: #0d8611;
-
+  
+  --warning-light-color:#FEEBC8;
   --warning-color: #ff9204;
 }
