@@ -110,3 +110,9 @@ main {
     margin: 2rem;
   }
 }
+
+@media (max-width: 500px) {
+  .component-container {
+    margin: 1rem;
+  }
+}
