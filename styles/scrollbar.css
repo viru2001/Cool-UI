@@ -1,0 +1,19 @@
+  @import "./variable.css";
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--primary-color) var(--white-color);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--white-color);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+  }
