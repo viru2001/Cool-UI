@@ -45,10 +45,11 @@ main {
 
 #nav-menu-hamburger {
   border-bottom: solid 2px var(--secondary-dark-color);
+  background-color: var(--secondary-faint-color);
 }
 
 .component-nav-hamburg {
-  height: 45vh;
+  height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -109,21 +110,24 @@ main {
   .component-container {
     margin: 2rem;
   }
+  .component-nav-list li {
+    margin: 2rem 0;
+  }
 }
 
 @media (max-width: 500px) {
   .component-container {
     margin: 1rem;
   }
-  .search-box-hamburg{
+  .search-box-hamburg {
     width: 55vw;
   }
-  .btn-search-hamburg{
+  .btn-search-hamburg {
     right: 5rem;
   }
 }
 @media (max-width: 370px) {
-  .btn-search-hamburg{
+  .btn-search-hamburg {
     right: 6rem;
   }
 }
