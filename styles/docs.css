@@ -115,4 +115,15 @@ main {
   .component-container {
     margin: 1rem;
   }
+  .search-box-hamburg{
+    width: 55vw;
+  }
+  .btn-search-hamburg{
+    right: 5rem;
+  }
+}
+@media (max-width: 370px) {
+  .btn-search-hamburg{
+    right: 6rem;
+  }
 }
