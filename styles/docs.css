@@ -1,6 +1,18 @@
 @import "./navbar.css";
 @import "./footer.css";
 
+:root{
+  --text-highlight-bg-color:#E2E7E8;
+}
+.highlight-text{
+  background-color: var(--text-highlight-bg-color) ;
+  color: var(--primary-dark-color);
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 5px;
+  margin-top: 5px;
+  display: inline-block;
+}
 /* component navigation menu */
 .component-nav {
   top: 0;
@@ -64,7 +76,7 @@ main {
 
 /* component container styles */
 .component-container {
-  margin: 5rem;
+  margin: 8rem;
 }
 
 .component-wrapper {
@@ -101,14 +113,14 @@ main {
     display: block;
   }
 
-  #typography {
+  #installation {
     margin-top: 8rem;
   }
 }
 
 @media (max-width: 768px) {
   .component-container {
-    margin: 2rem;
+    margin: 5rem;
   }
   .component-nav-list li {
     margin: 2rem 0;
@@ -117,7 +129,7 @@ main {
 
 @media (max-width: 500px) {
   .component-container {
-    margin: 1rem;
+    margin: 3rem;
   }
   .search-box-hamburg {
     width: 55vw;
