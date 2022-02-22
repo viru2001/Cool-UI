@@ -712,14 +712,19 @@
           <!-- normal button -->
           <p class="headline-md font-wt-bold mt-5">Normal Button</p>
 
-          <div class="component-wrapper p-8 my-4 d-flex flex-wrap justify-around">
+          <div
+            class="component-wrapper p-8 my-4 d-flex flex-wrap justify-around"
+          >
             <button
               type="button"
               class="btn rounded-sm text-sm p-3 btn-primary m-4"
             >
               Primary
             </button>
-            <button type="button" class="btn rounded-sm text-sm p-3 btn-danger m-4">
+            <button
+              type="button"
+              class="btn rounded-sm text-sm p-3 btn-danger m-4"
+            >
               Danger
             </button>
             <button
@@ -742,14 +747,19 @@
           <!-- Large button -->
           <p class="headline-md font-wt-bold mt-5">Large Button</p>
 
-          <div class="component-wrapper p-8 my-4 d-flex flex-wrap justify-around">
+          <div
+            class="component-wrapper p-8 my-4 d-flex flex-wrap justify-around"
+          >
             <button
               type="button"
               class="btn btn-primary rounded-sm text-md p-5 m-4"
             >
               Primary
             </button>
-            <button type="button" class="btn btn-danger rounded-sm text-md p-5 m-4">
+            <button
+              type="button"
+              class="btn btn-danger rounded-sm text-md p-5 m-4"
+            >
               Danger
             </button>
             <button
@@ -954,6 +964,7 @@
           <div
             class="component-wrapper p-8 my-4 container-center d-flex flex-col"
           >
+            <!-- variant 1 -->
             <div
               class="card-wrapper product-card horizontal-card-wrapper d-flex"
             >
@@ -1002,37 +1013,38 @@
                 </div>
               </div>
             </div>
-
-            <div class="card-wrapper w-100 d-flex mt-4">
+            <!-- variant 2 -->
+            <div class="card-wrapper d-flex mt-4 w-100">
               <div class="p-4 container-center">
                 <img
-                  loading="lazy"
                   class="img-responsive horizontal-card-img w-75"
                   src="../../assets/monitor.png"
                   alt="monitor image"
                 />
               </div>
               <div class="p-3 w-100">
-                <h2 class="cart-product-heading">
-                  LG 22 inch (55 cm) IPS Monitor
-                </h2>
+                <div class="product-info-wrapper">
+                  <h2 class="cart-product-heading">
+                    LG 22 inch (55 cm) IPS Monitor
+                  </h2>
 
-                <div class="pt-3">
-                  <div class="product-price-wrapper">
-                    <span class="product-discount-price text-sm font-wt-bold"
-                      >Rs. 7,999.00</span
-                    >
-                    <span class="product-original-price text-sm"
-                      >Rs. 9,438.82</span
+                  <div class="pt-3">
+                    <div class="product-price-wrapper">
+                      <span class="product-discount-price text-sm font-wt-bold"
+                        >Rs. 7,999.00</span
+                      >
+                      <span class="product-original-price text-sm ml-6"
+                        >Rs. 9,438.82</span
+                      >
+                    </div>
+                    <span class="product-discount font-wt-bold text-sm"
+                      >Save 18%</span
                     >
                   </div>
-                  <span class="product-discount font-wt-bold text-sm"
-                    >Save 18%</span
-                  >
                 </div>
 
-                <div class="d-flex my-2">
-                  <div class="d-flex align-center">
+                <div class="d-flex my-2 cart-action-container">
+                  <div class="d-flex align-center quantity-btn-container">
                     <button
                       type="button"
                       class="btn btn-quantity btn-primary rounded-full"
@@ -1047,21 +1059,22 @@
                       <i class="fas fa-minus text-sm"></i>
                     </button>
                   </div>
-                  <button
-                    type="button"
-                    class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3 ml-8"
-                  >
-                    <i class="fas fa-trash mr-3"></i>
-                    Remove
-                  </button>
-
-                  <button
-                    type="button"
-                    class="btn btn-primary rounded-sm text-sm p-3 ml-auto"
-                  >
-                    <i class="fas fa-heart mr-3"></i>
-                    Move to Wishlist
-                  </button>
+                  <div class="d-flex w-100 my-4 cart-btn-wrapper">
+                    <button
+                      type="button"
+                      class="btn btn-remove btn-outline btn-primary-outline rounded-sm text-sm p-3"
+                    >
+                      <i class="fas fa-trash mr-3"></i>
+                      Remove
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary rounded-sm text-sm p-3 ml-auto"
+                    >
+                      <i class="fas fa-heart mr-3"></i>
+                      Move to Wishlist
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1827,7 +1840,9 @@
           <!-- simple navbar -->
           <p class="headline-md font-wt-bold mt-5">Simple Navigation</p>
           <div class="component-wrapper p-8 my-4">
-            <header class="navbar-wrapper d-flex flex-wrap align-center box-shadow-lg">
+            <header
+              class="navbar-wrapper d-flex flex-wrap align-center box-shadow-lg"
+            >
               <h1 class="brand headline-lg m-4">Brand</h1>
               <nav class="ml-auto">
                 <ul class="d-flex text-sm">
@@ -2093,7 +2108,9 @@
                     href="#"
                   >
                     <i class="fas fa-store text-md"></i>
-                    <span class="nav-link-description text-sm ml-4">Products</span>
+                    <span class="nav-link-description text-sm ml-4"
+                      >Products</span
+                    >
                   </a>
                   <a
                     class="nav-link-icon icon-badge-wrapper m-3 d-flex align-center text-dec-none"
@@ -2119,7 +2136,9 @@
                         >7</span
                       ></span
                     >
-                    <span class="nav-link-description text-sm ml-4">Wishlist</span>
+                    <span class="nav-link-description text-sm ml-4"
+                      >Wishlist</span
+                    >
                   </a>
                 </div>
               </nav>

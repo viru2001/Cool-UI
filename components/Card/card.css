@@ -13,6 +13,7 @@
 .product-original-price {
   text-decoration: line-through;
   color: var(--secondary-dark-color);
+  font-size: 1.3rem;
 }
 
 .horizontal-card-btns-wrapper {
@@ -65,6 +66,29 @@
 .cart-product-heading {
   font-size: 2rem;
 }
-.product-original-price {
-  font-size: 1.3rem;
+
+@media (max-width: 624px) {
+  .card-wrapper {
+    flex-direction: column;
+  }
+  .cart-action-container {
+    flex-direction: column;
+  }
+  .product-info-wrapper,
+  .quantity-btn-container {
+    margin-left: 2rem;
+  }
+
+}
+@media (max-width:480px) {
+  .horizontal-card-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 415px) {
+  .product-info-wrapper,
+  .quantity-btn-container,
+  .btn-remove {
+    margin-left: 1rem;
+  }
 }
