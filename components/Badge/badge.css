@@ -5,30 +5,29 @@
   border: solid 1px var(--white-color);
 }
 .badge-lg-position {
-  /* .badge-lg-status { */
-  bottom: 1.2rem;
-  right: 1.6rem;
+  bottom: 1rem;
+  right: -2px;
 }
 .badge-status-online {
   background-color: var(--success-color);
 }
 .badge-md-position {
   bottom: 1rem;
-  right: 3px;
+  right: -4px;
 }
 .badge-status-offline {
   background-color: var(--secondary-dark-color);
 }
 .badge-sm-position {
-  bottom: 1rem;
+  bottom: 0;
   right: -3px;
 }
 .badge-status-dnd {
   background-color: var(--danger-color);
 }
 .badge-xs-position {
-  bottom: 0;
-  right: -3px;
+  bottom: -0.5rem;
+  right: -6px;
 }
 .badge-status-idle {
   background-color: var(--warning-color);
