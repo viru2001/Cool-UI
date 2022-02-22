@@ -15,3 +15,10 @@
 .btn-toast-close{
     color: var(--white-color);
 }
+
+
+@media (max-width: 884px){
+    .toast{
+        top:8rem;
+    }
+}
