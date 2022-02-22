@@ -89,4 +89,29 @@ Visit [docs](https://cool-ui.netlify.app/pages/docs.html) to learn more.
   - Simple navigation
   - Navigation woth search bar
   - Navigation with search-bar and icon buttons
+  - Navigation with hamburger menu
+
+- [Grid](https://cool-ui.netlify.app/pages/docs.html#grid)
+  - 20-80 layout
+  - 30-70 layout
+  - 50-50 ( 2 column ) layout
+  - 3 column layout
+
+
+- [Rating](https://cool-ui.netlify.app/pages/docs.html#rating)
+  - simple rating
+
+
+- [Toast](https://cool-ui.netlify.app/pages/docs.html#toast)
+  - success toast
+  - error toast
+
+
+- [Slider](https://cool-ui.netlify.app/pages/docs.html#slider)
+  - simple slider
+  - styled slider
+  - slider with icon
+  - disabled slider
+
+
 
