@@ -14,3 +14,9 @@
     width: 40vw;
     background-color: var(--white-color);
 }
+
+@media (max-width:500px) {
+    .modal-container{
+      width: 60vw;
+    }
+}
